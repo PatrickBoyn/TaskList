@@ -1,5 +1,6 @@
 let val
 // This was created following a tutorial
+// There are no semi colons because of an auto formatter (Prettier)
 
 // Selects the document
 val = document
@@ -18,5 +19,7 @@ val = document.doctype
 val = document.domain
 // Selects the entire URL
 val = document.URL
+// Selects the character set
+val = document.characterSet
 
 console.log(val)
