@@ -10,3 +10,7 @@ const items = document.getElementsByClassName("col")
 console.log(document.getElementsByClassName("col"))
 
 console.log(items[0])
+
+// Setting the style to the class name elements
+items[0].style.background = "red"
+items[2].textContent = "Hello World!"
