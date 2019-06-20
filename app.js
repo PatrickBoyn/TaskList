@@ -14,5 +14,9 @@ val = document.head
 val = document.body
 // Selects the doctype
 val = document.doctype
+// Selects the domain
+val = document.domain
+// Selects the entire URL
+val = document.URL
 
 console.log(val)
