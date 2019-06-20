@@ -10,5 +10,9 @@ val = document.all
 val = document.all[0]
 // Selects just the head of the HTML
 val = document.head
+// Selects the body
+val = document.body
+// Selects the doctype
+val = document.doctype
 
 console.log(val)
