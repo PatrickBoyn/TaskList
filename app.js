@@ -29,5 +29,9 @@ val = document.contentType
 val = document.forms
 // Selects a single form
 val = document.forms[0]
+// Selects the id from a form
+val = document.forms[0].id
+// Selects the method of a form (get post etc)
+val = document.forms[0].method
 
 console.log(val)
