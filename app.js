@@ -21,5 +21,13 @@ val = document.domain
 val = document.URL
 // Selects the character set
 val = document.characterSet
+// Get the content type
+val = document.contentType
+
+// Not recommended
+// Selects all the forms on the page
+val = document.forms
+// Selects a single form
+val = document.forms[0]
 
 console.log(val)
