@@ -1,18 +1,20 @@
 // Get Element by Id
 console.log(document.getElementById("task-title"))
 
+// Sets the get element by id as a variable.
+const taskTitle = document.getElementById("task-title")
+
 // Changes the style of an id
-document.getElementById("task-title").style.background = "red"
+taskTitle.style.background = "red"
 // Sets the color of the id
-document.getElementById("task-title").style.color = "white"
+taskTitle.style.color = "white"
 // Sets the padding of the id
-document.getElementById("task-title").style.padding = "5px"
+taskTitle.style.padding = "5px"
 // Sets the display to none
-// document.getElementById("task-title").style.display = "none"
+// taskTitle.style.display = "none"
 
 // Change the content
-document.getElementById("task-title").textContent = "Task List"
-document.getElementById("task-title").innerText = "My Tasks"
+taskTitle.textContent = "Task List"
+taskTitle.innerText = "My Tasks"
 // Adding HTML via javascript
-document.getElementById("task-title").innerHTML =
-  '<span style="color:blue">Task List HTML!</span>'
+taskTitle.innerHTML = '<span style="color:blue">Task List HTML!</span>'
