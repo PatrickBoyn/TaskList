@@ -1,8 +1,14 @@
 let val
+// This was created following a tutorial
 
 // Selects the document
 val = document
 // Selects the document as an array
 val = document.all
+
+//Selects individual parts of the document
+val = document.all[0]
+// Selects just the head of the HTML
+val = document.head
 
 console.log(val)
