@@ -14,3 +14,7 @@ console.log(items[0])
 // Setting the style to the class name elements
 items[0].style.background = "red"
 items[2].textContent = "Hello World!"
+
+const h5s = document.querySelectorAll("h5")
+
+console.log(h5s)
