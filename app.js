@@ -16,4 +16,9 @@ function loadEventListeners() {
   form.addEventListener("submit", addTask)
 }
 
-function addTask() {}
+function addTask(e) {
+  if (taskInput.value === "") {
+    alert("Add a task")
+  }
+  e.preventDefault()
+}
