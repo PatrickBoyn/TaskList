@@ -63,3 +63,10 @@ function clearTasks() {
     taskList.removeChild(taskList.firstChild)
   }
 }
+
+// Filter tasks
+function filterTasks(e) {
+  const text = e.target.value.toLowerCase()
+
+  console.log(text)
+}
