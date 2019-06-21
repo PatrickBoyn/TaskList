@@ -33,6 +33,9 @@ function addTask(e) {
   link.className = "delete-item secondary-content"
   //   TODO create SVG ICON instead
   link.textContent = "X"
-
+  //   Append the link to the li
+  li.appendChild(link)
+  //   Append the li to the ul
+  console.log(li)
   e.preventDefault()
 }
