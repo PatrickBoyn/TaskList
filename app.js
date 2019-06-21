@@ -1,5 +1,4 @@
 // Define UI variables
-// No semi colons because of Prettier (Auto formatter)
 // This was done using a tutorial
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
@@ -60,7 +59,11 @@ function storeTaskInStorage(task) {
     tasks = [];
   } else {
     tasks = JSON.parse(localStorage.getItem('tasks'));
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
   }
+
+  tasks.push(tasks);
 }
 
 // Remove task
