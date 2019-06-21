@@ -25,5 +25,10 @@ function addTask(e) {
   const li = document.createElement("li")
   //   Add a class
   li.className = "collection-item"
+  //   Create text node and append to the li
+  li.appendChild(document.createTextNode(taskInput.value))
+  //   Create new link element
+  const link = document.createElement("a")
+
   e.preventDefault()
 }
