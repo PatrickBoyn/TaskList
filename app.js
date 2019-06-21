@@ -33,6 +33,10 @@ function getTasks() {
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }
+
+  tasks.forEach(function(task) {
+    createLi('tasks');
+  });
 }
 
 function addTask(e) {
@@ -40,22 +44,7 @@ function addTask(e) {
     alert('Add a task');
   }
 
-  //   Create li element
-  const li = document.createElement('li');
-  //   Add a class
-  li.className = 'collection-item';
-  // Create text node and append to the li
-  li.appendChild(document.createTextNode(taskInput.value));
-  // Create new link element
-  const link = document.createElement('a');
-  // Adds a class to the link
-  link.className = 'delete-item secondary-content';
-  //   TODO create SVG ICON instead
-  link.innerHTML = '<i> X</i>';
-  // Append the link to the li
-  li.appendChild(link);
-  // Append the li to the ul
-  taskList.appendChild(li);
+  createLi(taskInput.value);
 
   storeTaskInStorage();
 
@@ -107,4 +96,23 @@ function filterTasks(e) {
       task.style.display = 'none';
     }
   });
+}
+
+function createLi(task) {
+  //   Create li element
+  const li = document.createElement('li');
+  //   Add a class
+  li.className = 'collection-item';
+  // Create text node and append to the li
+  li.appendChild(document.createTextNode(task));
+  // Create new link element
+  const link = document.createElement('a');
+  // Adds a class to the link
+  link.className = 'delete-item secondary-content';
+  //   TODO create SVG ICON instead
+  link.innerHTML = '<i> X</i>';
+  // Append the link to the li
+  li.appendChild(link);
+  // Append the li to the ul
+  taskList.appendChild(li);
 }
