@@ -11,6 +11,7 @@ loadEventListeners();
 
 // Load all event listeners
 function loadEventListeners() {
+  document.addEventListener('DOMContentLoaded', getTasks);
   // Add task event
   form.addEventListener('submit', addTask);
   // Removes task event
@@ -19,6 +20,19 @@ function loadEventListeners() {
   clearBtn.addEventListener('click', clearTasks);
   // Filter tasks and events
   filter.addEventListener('keyup', filterTasks);
+}
+
+// Get the tasks from local storage
+function getTasks() {
+  let tasks;
+
+  if (localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }
 }
 
 function addTask(e) {
