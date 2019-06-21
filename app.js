@@ -29,6 +29,10 @@ function addTask(e) {
   li.appendChild(document.createTextNode(taskInput.value))
   //   Create new link element
   const link = document.createElement("a")
+  //   Adds a class to the link
+  link.className = "delete-item secondary-content"
+  //   TODO create SVG ICON instead
+  link.textContent = "X"
 
   e.preventDefault()
 }
