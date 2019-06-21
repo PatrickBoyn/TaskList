@@ -55,3 +55,9 @@ function removeTask(e) {
     }
   }
 }
+
+function clearTasks() {
+  while (taskList.firstChild) {
+    taskList.removeChild(taskList.firstChild)
+  }
+}
