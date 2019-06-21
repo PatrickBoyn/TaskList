@@ -68,5 +68,5 @@ function clearTasks() {
 function filterTasks(e) {
   const text = e.target.value.toLowerCase()
 
-  console.log(text)
+  document.querySelectorAll(".collection-item").forEach()
 }
