@@ -26,23 +26,27 @@ function addTask(e) {
   const li = document.createElement("li")
   //   Add a class
   li.className = "collection-item"
-  //   Create text node and append to the li
+  // Create text node and append to the li
   li.appendChild(document.createTextNode(taskInput.value))
-  //   Create new link element
+  // Create new link element
   const link = document.createElement("a")
-  //   Adds a class to the link
+  // Adds a class to the link
   link.className = "delete-item secondary-content"
   //   TODO create SVG ICON instead
-  link.textContent = "X"
-  //   Append the link to the li
+  link.innerHTML = "<i> X</i>"
+  // Append the link to the li
   li.appendChild(link)
-  //   Append the li to the ul
+  // Append the li to the ul
   taskList.appendChild(li)
 
-  //   Clear the input
+  // Clear the input
   taskInput.value = ""
 
   e.preventDefault()
 }
-
-function removeTask() {}
+// Remove task
+function removeTask(e) {
+  if (e.target.parentElement.classList.contains("delete-item")) {
+    console.log(e.target)
+  }
+}
