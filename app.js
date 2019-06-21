@@ -36,6 +36,10 @@ function addTask(e) {
   //   Append the link to the li
   li.appendChild(link)
   //   Append the li to the ul
-  console.log(li)
+  taskList.appendChild(li)
+
+  //   Clear the input
+  taskInput.value = ""
+
   e.preventDefault()
 }
