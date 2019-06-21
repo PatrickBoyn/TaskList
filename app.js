@@ -20,5 +20,10 @@ function addTask(e) {
   if (taskInput.value === "") {
     alert("Add a task")
   }
+
+  //   Create li element
+  const li = document.createElement("li")
+  //   Add a class
+  li.className = "collection-item"
   e.preventDefault()
 }
