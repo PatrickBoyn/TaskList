@@ -51,6 +51,15 @@ function addTask(e) {
 
   e.preventDefault();
 }
+
+// store task in local storage
+function storeTaskInStorage(task) {
+  let tasks;
+
+  if (localStorage.getItem('tasks') === null) {
+  }
+}
+
 // Remove task
 function removeTask(e) {
   if (e.target.parentElement.classList.contains('delete-item')) {
