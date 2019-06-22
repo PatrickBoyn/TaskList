@@ -24,6 +24,7 @@ body {
 
 #task {
   border-radius: 5px;
+  border: 2.5px solid red;
   padding-left: 0.8rem;
 }
 .task__label {
