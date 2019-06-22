@@ -27,7 +27,10 @@ body {
   border-bottom: 3px solid transparent;
   padding: 0.2rem;
 }
-
+.task__label {
+  font-size: 1.6rem;
+  display: block;
+}
 #task:placeholder-shown + .task__label {
   overflow: 0;
   visibility: hidden;
