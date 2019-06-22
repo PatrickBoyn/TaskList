@@ -29,7 +29,7 @@ body {
 
 #task:focus {
   outline: none;
-  border: 3px solid #07b71b;
+  border: 2.5px solid #07b71b;
 }
 
 .btn {
