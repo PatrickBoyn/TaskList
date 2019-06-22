@@ -16,3 +16,12 @@ body {
   padding: 2.3rem;
   box-sizing: border-box;
 }
+
+/* The first form */
+.card-title {
+  font-size: 3.25rem;
+}
+
+#task:focus {
+  outline: none;
+}
