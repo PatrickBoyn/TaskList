@@ -10,3 +10,9 @@ html {
   /* 1 rem = 16px */
   font-size: 62.5%;
 }
+
+body {
+  line-height: 1.7;
+  padding: 2.3rem;
+  box-sizing: border-box;
+}
