@@ -24,13 +24,13 @@ body {
 
 #task {
   border-radius: 5px;
-  border-bottom: 3px solid transparent;
   padding-left: 0.8rem;
 }
 .task__label {
   font-size: 1.6rem;
   display: block;
 }
+/* Hides the label */
 #task:placeholder-shown + .task__label {
   overflow: 0;
   visibility: hidden;
