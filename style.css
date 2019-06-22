@@ -25,6 +25,11 @@ body {
 #task {
   border-radius: 5px;
   border-bottom: 3px solid transparent;
+  padding: 0.2rem;
+}
+
+#task:placeholder-shown {
+  overflow: hidden;
 }
 
 #task:focus {
