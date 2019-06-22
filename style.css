@@ -35,3 +35,7 @@ body {
   text-transform: uppercase;
   border-radius: 100px;
 }
+
+.btn:focus {
+  outline: none;
+}
