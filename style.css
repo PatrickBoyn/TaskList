@@ -28,8 +28,10 @@ body {
   padding: 0.2rem;
 }
 
-#task:placeholder-shown {
-  overflow: hidden;
+#task:placeholder-shown + .task__label {
+  overflow: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
 }
 
 #task:focus {
