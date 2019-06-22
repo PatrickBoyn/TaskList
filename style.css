@@ -47,6 +47,11 @@ body {
 .btn:focus {
   outline: none;
 }
+
 .btn:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.btn__label {
+  font-size: 1.2rem;
 }
