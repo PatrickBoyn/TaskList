@@ -147,5 +147,5 @@ i {
 }
 
 .collection-item:nth-child(odd) {
-  background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.3);
 }
