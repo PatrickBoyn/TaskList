@@ -72,6 +72,10 @@ body {
 }
 
 /* The second form */
+.card-action {
+  display: flex;
+  flex-direction: column;
+}
 #filter {
   border-radius: 5px;
   border: 2.5px solid blue;
@@ -114,6 +118,13 @@ a:visited {
   font-size: 1.5rem;
   border: 1px solid #ccc;
   list-style: none;
+}
+/* TODO remember to change this when updating to the SVG */
+i {
+  cursor: pointer;
+}
+.collection-item {
+  padding-left: 1rem;
 }
 .collection-item:not(:last-child) {
   border-bottom: 1px solid #ccc;
