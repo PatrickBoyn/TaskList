@@ -66,4 +66,10 @@ body {
 .btn__label {
   font-size: 1.2rem;
 }
+
 /* The second form */
+#filter {
+  border-radius: 5px;
+  border: 2.5px solid blue;
+  padding-left: 0.8rem;
+}
