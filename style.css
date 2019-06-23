@@ -36,6 +36,7 @@ body {
   flex-direction: column;
 }
 .task__label {
+  margin-bottom: 2rem;
   font-size: 1.6rem;
   display: block;
 }
@@ -83,7 +84,7 @@ body {
   justify-content: center;
 }
 #filter {
-  margin: 1.3rem 0;
+  margin-top: 1.3rem;
   border-radius: 5px;
   border: 1px solid blue;
   padding-left: 0.8rem;
