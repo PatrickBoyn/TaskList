@@ -84,11 +84,10 @@ body {
   outline: none;
   border: 2.5px solid green;
 }
-
+.clear-tasks {
+}
 a:link,
 a:visited {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   border-radius: 10px;
