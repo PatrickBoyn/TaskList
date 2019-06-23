@@ -107,8 +107,13 @@ function removeTask(e) {
       e.target.parentElement.parentElement.remove();
     }
   }
+  // Remove from local storage
+  removeTaskFromStorage(e.target.parentElement.parentElement);
 }
 
+function removeTaskFromStorage(taskItem) {
+  console.log(taskItem);
+}
 // TODO figure out why the clear tasks button goes away when used
 function clearTasks() {
   while (taskList.firstChild) {
