@@ -83,6 +83,7 @@ body {
   justify-content: center;
 }
 #filter {
+  margin: 1.3rem 0;
   border-radius: 5px;
   border: 2.5px solid blue;
   padding-left: 0.8rem;
