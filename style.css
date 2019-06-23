@@ -73,3 +73,14 @@ body {
   border: 2.5px solid blue;
   padding-left: 0.8rem;
 }
+
+/* Hides the label */
+#filter:placeholder-shown + .filter__label {
+  overflow: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+#filter:focus {
+  outline: none;
+  border: 2.5px solid green;
+}
