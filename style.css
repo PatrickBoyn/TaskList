@@ -31,6 +31,10 @@ body {
   border: 2.5px solid red;
   padding-left: 0.8rem;
 }
+#task-form {
+  display: flex;
+  flex-direction: column;
+}
 .task__label {
   font-size: 1.6rem;
   display: block;
@@ -111,8 +115,11 @@ a:visited {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
+a:link:focus,
+a:visited:focus {
+}
+/* Possible styling later */
 .input-field {
-  margin-bottom: 1.5rem;
 }
 #task-title {
   font-size: 2.45rem;
