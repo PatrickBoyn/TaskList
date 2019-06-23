@@ -128,7 +128,6 @@ function removeTaskFromStorage(taskItem) {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// TODO figure out why the clear tasks button goes away when used
 function clearTasks() {
   while (taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
