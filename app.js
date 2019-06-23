@@ -35,9 +35,9 @@ function getTasks() {
   }
 
   tasks.forEach(function(task) {
-    //   Create li element
+    // Create li element
     const li = document.createElement('li');
-    //   Add a class
+    // Add a class
     li.className = 'collection-item';
     // Create text node and append to the li
     li.appendChild(document.createTextNode(task));
@@ -58,9 +58,9 @@ function addTask(e) {
   if (taskInput.value === '') {
     alert('Add a task');
   }
-  //   Create li element
+  // Create li element
   const li = document.createElement('li');
-  //   Add a class
+  // Add a class
   li.className = 'collection-item';
   // Create text node and append to the li
   li.appendChild(document.createTextNode(taskInput.value));
@@ -68,7 +68,7 @@ function addTask(e) {
   const link = document.createElement('a');
   // Adds a class to the link
   link.className = 'delete-item secondary-content';
-  //   TODO create SVG ICON instead
+  // TODO create SVG ICON instead
   link.innerHTML = '<i style="cursor: pointer"> X</i>';
   // Append the link to the li
   li.appendChild(link);
