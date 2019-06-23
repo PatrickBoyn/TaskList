@@ -149,3 +149,7 @@ i {
 .collection-item:nth-child(odd) {
   background-color: rgba(221, 221, 221, 0.3);
 }
+/* Sets the display to none if there is no content */
+ul:empty {
+  display: none;
+}
