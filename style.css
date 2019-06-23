@@ -91,6 +91,7 @@ body {
 
 .filter__label {
   font-size: 1.6rem;
+  display: block;
 }
 /* Hides the label */
 #filter:placeholder-shown + .filter__label {
