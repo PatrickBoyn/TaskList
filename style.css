@@ -28,7 +28,7 @@ body {
 
 #task {
   border-radius: 5px;
-  border: 2.5px solid red;
+  border: 1px solid red;
   padding-left: 0.8rem;
 }
 #task-form {
@@ -48,7 +48,7 @@ body {
 
 #task:focus {
   outline: none;
-  border: 2.5px solid #07b71b;
+  border: 1px solid #07b71b;
 }
 
 .btn {
@@ -85,7 +85,7 @@ body {
 #filter {
   margin: 1.3rem 0;
   border-radius: 5px;
-  border: 2.5px solid blue;
+  border: 1px solid blue;
   padding-left: 0.8rem;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 #filter:focus {
   outline: none;
-  border: 2.5px solid green;
+  border: 1px solid green;
 }
 /* Possible styling later */
 .clear-tasks {
