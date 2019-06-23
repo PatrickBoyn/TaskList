@@ -45,7 +45,7 @@ function getTasks() {
     const link = document.createElement('a');
     // Adds a class to the link
     link.className = 'delete-item secondary-content';
-    //   TODO create SVG ICON instead
+    // TODO create SVG ICON instead
     link.innerHTML = '<i> X</i>';
     // Append the link to the li
     li.appendChild(link);
@@ -96,6 +96,8 @@ function storeTaskInStorage(task) {
   }
 
   tasks.push(task);
+
+  localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 // Remove task
