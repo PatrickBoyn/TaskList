@@ -89,6 +89,9 @@ body {
   padding-left: 0.8rem;
 }
 
+.filter__label {
+  font-size: 1.6rem;
+}
 /* Hides the label */
 #filter:placeholder-shown + .filter__label {
   overflow: 0;
@@ -141,4 +144,8 @@ i {
 }
 .collection-item:not(:last-child) {
   border-bottom: 1px solid #ccc;
+}
+
+.collection-item:nth-child(odd) {
+  background-color: #ddd;
 }
