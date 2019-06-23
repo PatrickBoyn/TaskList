@@ -119,7 +119,11 @@ function removeTaskFromStorage(taskItem) {
     tasks = JSON.parse(localStorage.getItem('tasks'));
   }
 
-  tasks.forEach(function(tasks) {});
+  tasks.forEach(function(task) {
+    if (taskItem.textContent === task) {
+      task.splice(index, 1);
+    }
+  });
 }
 
 // TODO figure out why the clear tasks button goes away when used
