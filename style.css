@@ -106,3 +106,10 @@ a:visited {
 #task-title {
   font-size: 2.45rem;
 }
+.collection {
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+}
+.collection-item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
