@@ -75,7 +75,7 @@ function addTask(e) {
   // Append the li to the ul
   taskList.appendChild(li);
 
-  storeTaskInStorage();
+  storeTaskInStorage(taskInput.value);
 
   // Clear the input
   taskInput.value = '';
@@ -107,6 +107,7 @@ function removeTask(e) {
   }
 }
 
+// TODO figure out why the clear tasks button goes away when used
 function clearTasks() {
   while (taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
