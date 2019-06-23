@@ -84,10 +84,12 @@ body {
   outline: none;
   border: 2.5px solid green;
 }
+/* Possible styling later */
 .clear-tasks {
 }
 a:link,
 a:visited {
+  margin-top: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   border-radius: 10px;
@@ -97,4 +99,10 @@ a:visited {
   padding: 0.6rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   text-decoration: none;
+}
+.input-field {
+  margin-bottom: 1.5rem;
+}
+#task-title {
+  font-size: 2.45rem;
 }
