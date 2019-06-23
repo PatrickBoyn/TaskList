@@ -124,6 +124,8 @@ function removeTaskFromStorage(taskItem) {
       task.splice(index, 1);
     }
   });
+
+  localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 // TODO figure out why the clear tasks button goes away when used
