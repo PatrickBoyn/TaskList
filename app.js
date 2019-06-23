@@ -152,5 +152,3 @@ function filterTasks(e) {
     }
   });
 }
-
-function createLi(task) {}
