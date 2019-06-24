@@ -69,7 +69,7 @@ function addTask(e) {
   // Adds a class to the link
   link.className = 'delete-item secondary-content';
   // TODO create SVG ICON instead
-  link.innerHTML = '<i style="cursor: pointer"> X</i>';
+  link.innerHTML = '<svg class="delete-icon"><use xlink:href="img/symbol-defs.svg#icon-trash""></svg>';
   // Append the link to the li
   li.appendChild(link);
   // Append the li to the ul
@@ -107,8 +107,6 @@ function removeTask(e) {
       e.target.parentElement.parentElement.remove();
     }
   }
-  // Remove from local storage
-  removeTaskFromStorage(e.target.parentElement.parentElement);
 }
 
 function removeTaskFromStorage(taskItem) {
