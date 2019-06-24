@@ -139,12 +139,13 @@ a:visited:active {
 }
 /* TODO remember to change this when updating to the SVG */
 svg {
-  height: 2.3rem;
-  width: 2.3rem;
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
 }
 .collection-item {
   padding-left: 1rem;
+  display: flex;
 }
 .collection-item:not(:last-child) {
   border-bottom: 1px solid #ccc;
