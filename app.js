@@ -68,7 +68,7 @@ function addTask(e) {
   const link = document.createElement('a');
   // Adds a class to the link
   link.className = 'delete-item secondary-content';
-  
+
   link.innerHTML = '<svg class="delete-icon"><use xlink:href="img/symbol-defs.svg#icon-trash""></svg>';
   // Append the link to the li
   li.appendChild(link);
@@ -105,6 +105,7 @@ function removeTask(e) {
   if (e.target.parentElement.classList.contains('delete-item')) {
     if (confirm('Are you sure?')) {
       e.target.parentElement.parentElement.remove();
+      removeTaskFromStorage(e.parentElement.parentElement);
     }
   }
 }
@@ -117,7 +118,7 @@ function removeTaskFromStorage(taskItem) {
     tasks = JSON.parse(localStorage.getItem('tasks'));
   }
 
-  tasks.forEach(function(task) {
+  tasks.forEach(function(task, index) {
     if (taskItem.textContent === task) {
       task.splice(index, 1);
     }
