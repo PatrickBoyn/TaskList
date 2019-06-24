@@ -139,6 +139,7 @@ a:visited:active {
 }
 /* TODO remember to change this when updating to the SVG */
 svg {
+  fill:red;
   height: 2rem;
   width: 2rem;
   cursor: pointer;
