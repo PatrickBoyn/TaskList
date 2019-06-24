@@ -46,7 +46,7 @@ function getTasks() {
     // Adds a class to the link
     link.className = 'delete-item secondary-content';
     // TODO create SVG ICON instead
-    link.innerHTML = '<i> X</i>';
+    link.innerHTML = '<svg class="delete-icon"><use xlink:href="img/symbol-defs.svg#icon-trash""></svg>';
     // Append the link to the li
     li.appendChild(link);
     // Append the li to the ul
@@ -120,7 +120,7 @@ function removeTaskFromStorage(taskItem) {
 
   tasks.forEach(function(task, index) {
     if (taskItem.textContent === task) {
-      task.splice(index, 1);
+      tasks.splice(index, 1);
     }
   });
 
