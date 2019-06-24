@@ -68,7 +68,7 @@ function addTask(e) {
   const link = document.createElement('a');
   // Adds a class to the link
   link.className = 'delete-item secondary-content';
-  // TODO create SVG ICON instead
+  
   link.innerHTML = '<svg class="delete-icon"><use xlink:href="img/symbol-defs.svg#icon-trash""></svg>';
   // Append the link to the li
   li.appendChild(link);
