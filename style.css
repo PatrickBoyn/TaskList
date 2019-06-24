@@ -138,7 +138,7 @@ a:visited:active {
   list-style: none;
 }
 /* TODO remember to change this when updating to the SVG */
-i {
+svg {
   cursor: pointer;
 }
 .collection-item {
