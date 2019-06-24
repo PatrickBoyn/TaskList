@@ -139,6 +139,8 @@ a:visited:active {
 }
 /* TODO remember to change this when updating to the SVG */
 svg {
+  height: 2.3rem;
+  width: 2.3rem;
   cursor: pointer;
 }
 .collection-item {
